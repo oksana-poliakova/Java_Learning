@@ -8,6 +8,7 @@ public class WhileLoops {
         while (myValue <= 5) {
 //            System.out.println("Hello" + myValue);
             ++myValue;
+            // test for git
         }
     }
 }
