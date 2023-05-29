@@ -24,9 +24,9 @@ public class MultidimensionalArrays {
         for (int i = 0; i < table.length; i++) {
             // returns amount of columns (number of elements in a one-dimensional array)
             for (int j = 0; j < table[i].length; j++) {
-                System.out.print(table[i][j] + " ");
+//                System.out.print(table[i][j] + " ");
             }
-            System.out.println();
+//            System.out.println();
         }
 
         // example with full name
@@ -35,9 +35,9 @@ public class MultidimensionalArrays {
                                  {"Anna",  "Grimmer"}};
         for(int i = 0; i < fullName.length; i++) {
             for(int j = 0; j < fullName[i].length; j++) {
-                System.out.print(fullName[i][j] + " ");
+//                System.out.print(fullName[i][j] + " ");
             }
-            System.out.println();
+//            System.out.println();
         }
     }
 }
