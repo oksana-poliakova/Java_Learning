@@ -8,7 +8,7 @@ public class Encapsulation {
         person1.setName("Maria");
         person1.setAge(9);
         person1.introduce();
-        System.out.println("Output from the main method: " + person1.getName() + " " + person1.getAge());
+//        System.out.println("Output from the main method: " + person1.getName() + " " + person1.getAge());
     }
 }
 
@@ -22,7 +22,7 @@ class PersonsData {
     // setter
     public void setName(String username) {
         if (username.isEmpty()) {
-            System.out.println("Invalid name value");
+//            System.out.println("Invalid name value");
         } else  {
             name = username;
         }
@@ -38,7 +38,7 @@ class PersonsData {
         if (userAge >= 0) {
             age = userAge;
         } else {
-            System.out.println("Invalid age value.");
+//            System.out.println("Invalid age value.");
         }
     }
 
@@ -48,6 +48,6 @@ class PersonsData {
     }
 
     void introduce() {
-        System.out.println("My name is " + name + " and I'm " + age + " years old");
+//        System.out.println("My name is " + name + " and I'm " + age + " years old");
     }
 }
