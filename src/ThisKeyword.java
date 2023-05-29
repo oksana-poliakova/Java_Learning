@@ -33,6 +33,6 @@ class Human {
     }
 
     public void getInfoAboutHuman() {
-        System.out.println("Human's name is " + name + " and age is " + age);
+//        System.out.println("Human's name is " + name + " and age is " + age);
     }
 }
