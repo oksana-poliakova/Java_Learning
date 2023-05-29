@@ -9,7 +9,7 @@ public class ClassesAndObjects {
         person2.setNameAndAge("Alice", 20);
         person2.introduce();
         int year2 = person2.calculateYearsToRetirement();
-        System.out.println("Number of years until retirement: " + year2 + " years");
+//        System.out.println("Number of years until retirement: " + year2 + " years");
 
         Person [] people = new Person[] { person1, person2 };
 //        System.out.println(people[0].age);
@@ -21,11 +21,11 @@ class Person {
     int age;
 
     void introduce() {
-        System.out.println("My name is " + name + " and I'm " + age + " years old");
+//        System.out.println("My name is " + name + " and I'm " + age + " years old");
     }
 
     void sayHello() {
-        System.out.println("Hello from " + name);
+//        System.out.println("Hello from " + name);
     }
 
     int calculateYearsToRetirement() {
