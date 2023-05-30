@@ -1,3 +1,5 @@
+package OOP;
+
 /**
  * @author Oksana Poliakova on 29.05.2023
  * @projectName Lesson1

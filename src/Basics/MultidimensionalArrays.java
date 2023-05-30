@@ -1,3 +1,5 @@
+package Basics;
+
 public class MultidimensionalArrays {
     public static void main(String [] args) {
         // one-dimensional array

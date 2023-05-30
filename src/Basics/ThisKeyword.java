@@ -1,3 +1,5 @@
+package Basics;
+
 /**
  * @author Oksana Poliakova on 29.05.2023
  * @projectName Lesson1
@@ -33,6 +35,6 @@ class Human {
     }
 
     public void getInfoAboutHuman() {
-//        System.out.println("Human's name is " + name + " and age is " + age);
+//        System.out.println("DataStructures.Human's name is " + name + " and age is " + age);
     }
 }

@@ -1,3 +1,5 @@
+package Basics;
+
 public class Arrays {
     public static void main(String [] args) {
         // String and Array are reference types

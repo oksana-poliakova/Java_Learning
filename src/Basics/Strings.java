@@ -1,3 +1,5 @@
+package Basics;
+
 public class Strings {
     public  static  void  main(String [] args) {
         // someText it's a reference to the object "Text" of the String class

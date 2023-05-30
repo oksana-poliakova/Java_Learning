@@ -37,7 +37,7 @@ class Computer {
 
 class Laptop extends Computer {
     
-    private int weight; 
+    private final int weight;
     public Laptop(String ssd, String ram, int weight) {
         // constructor from the superclass
         super(ssd, ram);

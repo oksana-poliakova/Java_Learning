@@ -1,3 +1,5 @@
+package Basics;
+
 public class IfElse {
     public  static  void  main(String [] args) {
         int a = 20;

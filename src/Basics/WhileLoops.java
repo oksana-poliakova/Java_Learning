@@ -1,3 +1,5 @@
+package Basics;
+
 public class WhileLoops {
     public  static  void  main(String [] args) {
         boolean someValue = 5 < 2; // false
