@@ -12,7 +12,6 @@ public class ObjectTest {
         // printLn, print calls the method toString()
         System.out.println(obj1);
     }
-
 }
 
 class Obj {
