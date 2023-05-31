@@ -5,9 +5,14 @@ package Practice;
  * @projectName Lesson1
  */
 public class TimeInterval {
-    private int hours;
-    private int minutes;
-    private int seconds;
+    // static can be only object, class can't be static
+    private static final int SECONDS_IN_MINUTE = 60;
+    private static final int MINUTES_IN_HOUR = 60;
+
+    private static final int SECONDS_IN_HOUR = 3600;
+    private final int hours;
+    private final int minutes;
+    private final int seconds;
 
     public TimeInterval(int hours, int minutes, int seconds) {
         this.hours = hours;
@@ -22,7 +27,7 @@ public class TimeInterval {
     }
 
     public int totalSeconds() {
-        return seconds + minutes * 60 + hours * 60 * 60;
+        return seconds + SECONDS_IN_MINUTE + hours * SECONDS_IN_HOUR;
     }
 
     public void print() {
@@ -32,5 +37,4 @@ public class TimeInterval {
     public TimeInterval sum(TimeInterval second) {
         return new TimeInterval(this.totalSeconds() + second.totalSeconds());
     }
-
 }
