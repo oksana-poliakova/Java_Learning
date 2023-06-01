@@ -12,4 +12,12 @@ public class Rectangle {
         this.leftUpperCorner = leftUpperCorner;
         this.rightLowerCorner = rightLowerCorner;
     }
+
+    public double getArea() {
+        return (rightLowerCorner.getX() - leftUpperCorner.getX()) * (leftUpperCorner.getY() - rightLowerCorner.getY());
+    }
+
+    public double getDiagonal() {
+        return leftUpperCorner.distance(rightLowerCorner);
+    }
 }
