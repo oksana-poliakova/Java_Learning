@@ -11,6 +11,12 @@ public class Polymorphism {
         devices[1] = new Android();
         devices[2] = new IPhone();
 
+        Mobile device = new Mobile();
+
+        if (device instanceof IPhone) {
+            System.out.println("It's iPhone");
+        }
+
         printInformation(devices);
     }
 
@@ -19,6 +25,7 @@ public class Polymorphism {
             device.printInfo();
             device.makeSound();
         }
+
     }
 }
 

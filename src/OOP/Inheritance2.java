@@ -9,6 +9,11 @@ public class Inheritance2 {
     public static void main(String [] args) {
         Laptop laptop1 = new Laptop("ssd1", "ram1", 2);
         laptop1.open();
+
+        if (laptop1 instanceof Computer) {
+            System.out.println("It's a check for instance");
+            laptop1.open();
+        }
     }
 }
 
@@ -51,6 +56,6 @@ class Laptop extends Computer {
     }
 
     public void open() {
-//        System.out.println("Open laptop");
+        System.out.println("Open laptop");
     }
 }
