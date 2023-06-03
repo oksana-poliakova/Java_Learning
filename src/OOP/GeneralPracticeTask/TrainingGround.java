@@ -11,6 +11,8 @@ public class TrainingGround {
         Warrior hero4 = new Warrior("Oliver", 2);
         Enemy enemy1 = new Enemy("James", 100);
 
+        Archer.SecondWolf wolf = new Archer.SecondWolf("Wolf");
+
         killEnemy(enemy1, hero2, hero3, hero4);
     }
 
