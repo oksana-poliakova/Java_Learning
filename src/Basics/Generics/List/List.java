@@ -1,4 +1,4 @@
-package Basics.Generics;
+package Basics.Generics.List;
 
 /**
  * @author Oksana Poliakova on 05.06.2023

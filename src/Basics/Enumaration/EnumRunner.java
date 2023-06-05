@@ -9,6 +9,7 @@ import java.util.Arrays;
 public class EnumRunner {
     public static void main(String[] args) {
         ProcessorType processorType = ProcessorType.BIT_64;
+        DayOfWeek today = DayOfWeek.MONDAY;
 
         System.out.println(processorType);
         System.out.println(processorType.name());
@@ -17,5 +18,6 @@ public class EnumRunner {
         System.out.println(ProcessorType.BIT_32.ordinal());
         System.out.println(ProcessorType.BIT_64.getName());
         System.out.println(ProcessorType.BIT_32.getDescription());
+        System.out.println(today);
     }
 }
