@@ -1,10 +1,13 @@
-package OOP.GeneralPracticeTask;
+package OOP.GeneralPracticeTask.Heroes;
+
+import OOP.GeneralPracticeTask.Enemy.Enemy;
+import OOP.GeneralPracticeTask.Weapon.RangeWeapon;
 
 /**
  * @author Oksana Poliakova on 02.06.2023
  * @projectName Lesson1
  */
-public class Archer extends Hero {
+public class Archer<T extends RangeWeapon> extends Hero<T> {
 
     private Wolf wolf;
 

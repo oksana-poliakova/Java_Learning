@@ -1,5 +1,11 @@
 package OOP.GeneralPracticeTask;
 
+import OOP.GeneralPracticeTask.Enemy.Enemy;
+import OOP.GeneralPracticeTask.Heroes.Archer;
+import OOP.GeneralPracticeTask.Heroes.Hero;
+import OOP.GeneralPracticeTask.Heroes.Mage;
+import OOP.GeneralPracticeTask.Heroes.Warrior;
+
 /**
  * @author Oksana Poliakova on 02.06.2023
  * @projectName Lesson1
@@ -11,7 +17,7 @@ public class TrainingGround {
         Warrior hero4 = new Warrior("Oliver", 2);
         Enemy enemy1 = new Enemy("James", 100);
 
-        Archer.SecondWolf wolf = new Archer.SecondWolf("Wolf");
+//        Archer.SecondWolf wolf = new Archer.SecondWolf("Wolf");
 
         killEnemy(enemy1, hero2, hero3, hero4);
     }
