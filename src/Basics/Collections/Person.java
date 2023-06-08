@@ -6,7 +6,7 @@ import java.util.Objects;
  * @author Oksana Poliakova on 06.06.2023
  * @projectName Lesson1
  */
-public class Person {
+public class Person implements Comparable<Person> {
 
     private int id;
     private String firstName;
@@ -53,5 +53,11 @@ public class Person {
     @Override
     public int hashCode() {
         return Objects.hash(id, firstName, lastName);
+    }
+
+
+    @Override
+    public int compareTo(Person o) {
+        return Integer.compare(id, o.id);
     }
 }
