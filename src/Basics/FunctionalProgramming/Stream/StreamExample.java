@@ -1,6 +1,7 @@
 package Basics.FunctionalProgramming.Stream;
 
 import java.util.List;
+import java.util.stream.Stream;
 
 /**
  * @author Oksana Poliakova on 13.06.2023
@@ -25,7 +26,16 @@ public class StreamExample {
                 .skip(1)
                 // Limits the stream to only two elements.
                 .limit(2)
+                // This operation transforms the elements of the stream into int values.
+                .mapToInt(Integer::intValue)
                 // Performs the operation of printing each element to the console.
                 .forEach(System.out::println);
+        System.out.println("===");
+
+        final List<String> stringStream = Stream.of("1", "5", "545", "2")
+                .peek(System.out::println)
+                .toList();
+
+
     }
 }
