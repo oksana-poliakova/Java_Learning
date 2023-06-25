@@ -1,0 +1,3 @@
+Hello World!
+Today is 25. June 2023
+I'm learning Java.
