@@ -6,6 +6,27 @@ package Multithreading;
  */
 public class ThreadDemo {
     public static void main(String[] args) {
+        testUsageRunnableThread();
+        testSimpleThreadUsingThread();
+    }
+
+    private static void testUsageRunnableThread() {
+        var simpleRunnable = new SimpleRunnable();
+        var runnableThread = new Thread(new SimpleRunnable(), "My runnable thread");
+        var lambdaThread = new Thread(() -> System.out.println("Hello from lambda: " + Thread.currentThread().getName()));
+
+        runnableThread.start();
+        lambdaThread.start();
+
+        try {
+            runnableThread.join();
+            lambdaThread.join();
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    private static void testSimpleThreadUsingThread() {
         SimpleThread simpleThread = new SimpleThread();
         // starts a new thread that will run concurrently with the main thread
         simpleThread.start();
@@ -18,6 +39,5 @@ public class ThreadDemo {
         }
         simpleThread.interrupt();
         System.out.println(Thread.currentThread().getName());
-
     }
 }
