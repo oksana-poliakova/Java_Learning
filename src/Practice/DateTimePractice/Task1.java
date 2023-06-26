@@ -20,7 +20,3 @@ public class Task1 {
         System.out.println(localDateTimeIn3Months.toLocalTime());
     }
 }
-
-
-  //      * 3. We have a string like "26-06-2023T13:44". Get the object of LocalDateTime with date. Convert to instant object with timezone "America/Chicago".
-    //    * 4. Create the object with today date. Create another object with different date. Find the number of days between these dates.
