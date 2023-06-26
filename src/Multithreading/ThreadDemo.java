@@ -11,15 +11,17 @@ public class ThreadDemo {
     }
 
     private static void testUsageRunnableThread() {
-        var simpleRunnable = new SimpleRunnable();
         var runnableThread = new Thread(new SimpleRunnable(), "My runnable thread");
+        System.out.println(runnableThread.getState());
         var lambdaThread = new Thread(() -> System.out.println("Hello from lambda: " + Thread.currentThread().getName()));
 
         runnableThread.start();
+        System.out.println(runnableThread.getState());
         lambdaThread.start();
 
         try {
             runnableThread.join();
+            System.out.println(runnableThread.getState());
             lambdaThread.join();
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
@@ -28,6 +30,7 @@ public class ThreadDemo {
 
     private static void testSimpleThreadUsingThread() {
         SimpleThread simpleThread = new SimpleThread();
+        System.out.println(simpleThread.getState());
         // starts a new thread that will run concurrently with the main thread
         simpleThread.start();
         try {
