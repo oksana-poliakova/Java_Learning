@@ -16,7 +16,7 @@ public class ReplaceAllExample {
         String output = input.replaceAll(pattern1, replacement1)
                 .replaceAll(pattern2, replacement2)
                 .replaceAll(pattern3, replacement3);
-        
+
         System.out.println(output);
     }
 }
